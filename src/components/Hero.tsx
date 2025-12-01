@@ -134,7 +134,7 @@ export function Hero() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[600px]">
               <ImageWithFallback
-                src="/public/hero-section-one.jpeg"
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
                 alt="Professional team collaborating on innovative technology solutions"
                 className="w-full h-full object-cover blur-[2px]"
               />
