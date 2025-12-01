@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 import { ExternalLink, ArrowRight } from "lucide-react";
@@ -82,12 +83,11 @@ export function Portfolio() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl text-slate-900 mb-4">
-            Our <span className="text-emerald-700">Portfolio</span>
+          <h2 className="text-4xl lg:text-5xl text-slate-900 mb-4 font-bold">
+            Successful <span className="text-emerald-700">Projects</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Delivering exceptional results for clients across industries. Here are
-            some of our recent success stories.
+            Proven expertise in enterprise software, cloud solutions, and digital transformation delivering measurable results across industries
           </p>
         </motion.div>
 

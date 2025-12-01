@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
@@ -58,7 +59,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl lg:text-6xl xl:text-7xl mb-6 text-slate-900"
+              className="text-5xl lg:text-6xl xl:text-7xl mb-6 text-slate-900 font-bold"
             >
               Next-Gen
               <span className="block text-emerald-700">IT Solutions</span>
@@ -131,29 +132,14 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[600px]">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1603219950587-b4f3f7ee87e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjB0ZWNobm9sb2d5fGVufDF8fHx8MTc2NDUwODYzN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                alt="Modern office technology"
-                className="w-full h-auto"
+                src="/public/hero-section-one.jpeg"
+                alt="Professional team collaborating on innovative technology solutions"
+                className="w-full h-full object-cover blur-[2px]"
               />
-              {/* Floating Card */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.6, delay: 0.8 }}
-                className="absolute bottom-8 left-8 bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-xl"
-              >
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <span className="text-2xl">🚀</span>
-                  </div>
-                  <div>
-                    <div className="text-sm text-slate-600">Innovation First</div>
-                    <div className="text-emerald-700">Leading the Future</div>
-                  </div>
-                </div>
-              </motion.div>
+              {/* Gradient Overlay for better visual */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-emerald-900/30 via-transparent to-emerald-700/10"></div>
             </div>
 
             {/* Decorative Elements */}

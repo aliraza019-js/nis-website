@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
@@ -36,19 +36,19 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@nextinnovation.com",
-      link: "mailto:hello@nextinnovation.com",
+      value: "contact@nexinsystems.com",
+      link: "mailto:info@nexinsystems.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+92 333 4039462",
+      link: "tel:+923334039462",
     },
     {
       icon: MapPin,
       title: "Office",
-      value: "123 Innovation Drive, Tech City, TC 12345",
+      value: "Johar Town, Lahore, Punjab, Pakistan",
       link: "#",
     },
   ];
@@ -63,12 +63,11 @@ export function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl text-slate-900 mb-4">
-            Get In <span className="text-emerald-700">Touch</span>
+          <h2 className="text-4xl lg:text-5xl text-slate-900 mb-4 font-bold">
+            Request Free <span className="text-emerald-700">Consultation</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Ready to transform your business? Let's discuss how we can help you
-            achieve your goals.
+            Ready to transform your business? Connect with our IT experts to discuss your project needs and goals.
           </p>
         </motion.div>
 

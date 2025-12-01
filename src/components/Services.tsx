@@ -1,12 +1,15 @@
+import React from "react";
 import { motion } from "motion/react";
 import { useInView } from "react-intersection-observer";
 import {
   Code2,
   Cloud,
-  Shield,
+  Brain,
   Smartphone,
-  Database,
+  Palette,
   LineChart,
+  Users,
+  GitBranch,
 } from "lucide-react";
 
 export function Services() {
@@ -31,10 +34,10 @@ export function Services() {
       color: "blue",
     },
     {
-      icon: Shield,
-      title: "Cybersecurity",
+      icon: Brain,
+      title: "AI & Machine Learning",
       description:
-        "Comprehensive security solutions to protect your digital assets from evolving threats.",
+        "AI and Machine Learning solutions to automate your business processes and improve your decision-making.",
       color: "red",
     },
     {
@@ -45,10 +48,17 @@ export function Services() {
       color: "purple",
     },
     {
-      icon: Database,
-      title: "Data Analytics",
+      icon: Palette,
+      title: "UI/UX Design",
       description:
-        "Transform your data into actionable insights with advanced analytics and BI solutions.",
+        "Beautiful, intuitive user interfaces designed to improve user experience and boost engagement.",
+      color: "purple",
+    },
+    {
+      icon: GitBranch,
+      title: "DevOps & SecOps",
+      description:
+        "Streamlined development operations and robust security practices to accelerate delivery and protect your assets.",
       color: "orange",
     },
     {
@@ -58,8 +68,16 @@ export function Services() {
         "Strategic consulting to modernize your business processes and embrace digital innovation.",
       color: "teal",
     },
+    {
+      icon: Users,
+      title: "Dedicated Team",
+      description:
+        "Skilled professionals dedicated to your project, working as an extension of your in-house team.",
+      color: "teal",
+    },
   ];
 
+  // Tailwind safelist: bg-indigo-100 text-indigo-700 group-hover:bg-indigo-700 bg-cyan-100 text-cyan-700 group-hover:bg-cyan-700 bg-pink-100 text-pink-700 group-hover:bg-pink-700
   const getColorClasses = (color: string) => {
     const colors: Record<string, { bg: string; text: string; hover: string }> = {
       emerald: {
@@ -92,6 +110,21 @@ export function Services() {
         text: "text-teal-700",
         hover: "group-hover:bg-teal-700",
       },
+      indigo: {
+        bg: "bg-indigo-100",
+        text: "text-indigo-700",
+        hover: "group-hover:bg-indigo-700",
+      },
+      cyan: {
+        bg: "bg-cyan-100",
+        text: "text-cyan-700",
+        hover: "group-hover:bg-cyan-700",
+      },
+      pink: {
+        bg: "bg-pink-100",
+        text: "text-pink-700",
+        hover: "group-hover:bg-pink-700",
+      },
     };
     return colors[color] || colors.emerald;
   };
@@ -106,12 +139,11 @@ export function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl lg:text-5xl text-slate-900 mb-4">
-            Our <span className="text-emerald-700">Services</span>
+          <h2 className="text-4xl lg:text-5xl text-slate-900 mb-4 font-bold">
+            IT Services & <span className="text-emerald-700">Solutions</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Comprehensive IT solutions tailored to transform your business and drive
-            sustainable growth
+            From cloud migration to AI/ML and DevOps - comprehensive technology solutions for digital transformation and business growth
           </p>
         </motion.div>
 
