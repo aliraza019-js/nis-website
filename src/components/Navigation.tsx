@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
+import { NISLogo } from "./NISLogo";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,22 +39,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="flex items-center gap-2"
-          >
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-700 to-emerald-900 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">NIS</span>
-            </div>
-            <div>
-              <h1 className="text-lg leading-tight">
-                <span className="text-emerald-900">Next Innovation</span>
-              </h1>
-              <p className="text-xs text-slate-500 tracking-wider">SYSTEMS</p>
-            </div>
-          </motion.div>
+          <NISLogo animated={true} size="medium" />
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">

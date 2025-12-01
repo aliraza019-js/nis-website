@@ -1,0 +1,23 @@
+<svg width="180" height="32" viewBox="0 0 180 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="emeraldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#047857;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#064e3b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Rounded square with gradient background -->
+  <rect x="2" y="2" width="24" height="24" rx="5" fill="url(#emeraldGradient)"/>
+  
+  <!-- NIS text -->
+  <text x="14" y="18" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">NIS</text>
+  
+  <!-- Next Innovation text -->
+  <text x="34" y="16" font-family="Arial, sans-serif" font-size="14" fill="#064e3b">
+    <tspan font-weight="400">Next Innovation</tspan>
+  </text>
+  
+  <!-- SYSTEMS text -->
+  <text x="34" y="24" font-family="Arial, sans-serif" font-size="8" fill="#64748b" letter-spacing="1">SYSTEMS</text>
+</svg>
+

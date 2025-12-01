@@ -1,0 +1,26 @@
+{
+  "name": "Next Innovation Systems",
+  "short_name": "NIS",
+  "description": "Next Innovation Systems - Professional IT Solutions",
+  "icons": [
+    {
+      "src": "/nis-icon.svg",
+      "sizes": "48x48",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#047857",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
+
